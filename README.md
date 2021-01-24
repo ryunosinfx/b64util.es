@@ -8,7 +8,7 @@ binary util for browser. not for nodejs.
 
 ## Requirement
 
-for modarn browser. not for IE.
+For modern browser. not for IE.(Chromium88~,Firefox84~)
 
 ## Usage
 ```EJS
@@ -53,109 +53,109 @@ import { B64Util } from './b64util.js';
     // String from Base64Url
     const u2s = B64Util.from64u(u);
     
-    // String From Base64
+    // String from Base64
     const d2s = B64Util.from64(d);
     
-    // base64Url From String
+    // Base64Url from String
     const s2u = B64Util.to64u(s);
     
-    // base64 From String
+    // Base64 from String
     const s2b = B64Util.to64(s);
     
-    // uint8Array From Base64
+    // Uint8Array from Base64
     const b2t = B64Util.b64ToU8a(d);
     
-    // base64 From Uint8Array
+    // Base64 from Uint8Array
     const t2b = B64Util.u8a2b64(u8a);
     
     // hex From Uint8Array
     const t2h = B64Util.u8a2Hex(u8a); 
     
-    // uint8Array From String
+    // Uint8Array from String
     const s2t = B64Util.s2u8a(s);
     
-    // hex From String
+    // Hex from String
     const s2h = B64Util.s2hex(s);
     
-    // string From Hex
+    // String from Hex
     const h2s = B64Util.hex2s(hex);
     
-    // arrayBuffer From Base64Url
+    // ArrayBuffer from Base64Url
     const a2u = B64Util.b64uToAb(u);
     
-    // binaryString From Base64
+    // BinaryString from Base64
     const bbs = B64Util.b64Tobs(d);
     
-    // binaryString From Base64Url
+    // BinaryString from Base64Url
     const ubs = B64Util.b64u2bs(u);
     
-    // binaryString From Uint8Array
+    // BinaryString from Uint8Array
     const tbs = B64Util.u8a2bs(u8a);
     
-    // uint8Array From Hex
+    // Uint8Array from Hex
     const h2t = B64Util.hex2u8a(hex);
     
-    // base64 From Hex
+    // Base64 from Hex
     const h2b = B64Util.hex2b64(hex);
     
-    // binaryString From Hex
+    // BinaryString from Hex
     const hbs = B64Util.hex2bs(hex);
     
-    // binaryString From ArrayBuffer
+    // BinaryString from ArrayBuffer
     const bsa = B64Util.ab2bs(ab);
     
-    // base64 From ArrayBuffer
+    // Base64 from ArrayBuffer
     const a2b = B64Util.aToB64(ai);
     
-    // base64Url From ArrayBuffer
+    // Base64Url from ArrayBuffer
     const a2u = B64Util.aToB64u(ai);
     
-    // hex From Base64
+    // Hex from Base64
     const b2h = B64Util.b64toHex(d);
     
-    // string From Base64Url
+    // String from Base64Url
     const a2h = B64Util.aToHex(ai);
     
-    // hex From Uint8Array
+    // Hex from Uint8Array
     const bst = B64Util.bs2u8a(bs);
     
-    // is String Base64
+    // Is String Base64
     const isb = B64Util.isB64(d);
     
-    // is String Base64Url
+    // Is String Base64Url
     const isu = B64Util.isB64u(d);
     
-    // utf8 String From Uint8Array
+    // Utf8 String from Uint8Array
     const t2u = B64Util.u8aToUtf8(u8a);
     
-    // utf8 String From BinaryString
+    // Utf8 String from BinaryString
     const ubs = B64Util.bs2utf8(bs);
     
-    // binaryString From DataUri
+    // BinaryString from DataUri
     const dbs = B64Util.dataURI2bs(dURI);
     
-    // uint8Array From DataUri
+    // Uint8Array from DataUri
     const d2t = B64Util.dataURI2u8a(dURI);
     
-    // dataUri From ArrayBuffer and ContentType
+    // DataUri from ArrayBuffer and ContentType
     const a2d = B64Util.ab2dataURI(ai, type ); //type default is  'application/octet-stream'
     
-    // blob From Base64 And ContentType
+    // Blob from Base64 And ContentType
     const b2b = B64Util.b64ToBlob(d, type);
     
-    // new Uint8Array From Uint8Arrays Array
+    // New Uint8Array from Uint8Arrays Array
     const jts = B64Util.joinU8as(u8as);
     
-    // base64url FromB ase64
+    // Base64url from Base64
     const u2b = B64Util.toB64u(d);
     
-    // base64 From Base64Url
+    // Base64 from Base64Url
     const b2u = B64Util.toB64(u);
     
-    // sha256sum From String
+    // sha256sum from String
     const s2g = await B64Util.sigs(s);
     
-    // sha256sum From Uint8Array
+    // sha256sum from Uint8Array
     const t2g = await B64Util.sig(u8a);
   }catch(e){
     console.log(e);
