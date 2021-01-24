@@ -9,22 +9,6 @@ export class B64Util {
 	}
 	static from64(d) {
 		return B64Util.u8aToUtf8(B64Util.b64ToU8a(d));
-		// const a = new Uint8Array(1);
-		// a.fill(0);
-		// const b = B64Util.b64ToU8a(d);
-		// const u8a = b.length % 2 ? B64Util.joinU8as([b, a]) : b;
-		// const u16a = new Uint16Array(u8a.buffer);
-		// const l = u16a.length;
-		// const c = Math.ceil(l / max);
-		// const r = [];
-		// for (let j = 0; j < c; j++) {
-		// 	const start = max * j;
-		// 	const size = l - start;
-		// 	const p = size > max ? max : size > 0 ? size : l;
-		// 	const u = u16a.slice(start, start + p);
-		// 	r.push(String.fromCharCode(...u));
-		// }
-		// return r.join('');
 	}
 	static to64u(s) {
 		return B64Util.toB64u(B64Util.to64(s));
@@ -39,10 +23,6 @@ export class B64Util {
 			const p = size > max ? max : size > 0 ? size : len;
 			const end = start + p;
 			const input = s.substring(start, end);
-			// const u = new Uint16Array(p);
-			// for (let i = 0; i < p; i++) {
-			// 	u[i] = input.charCodeAt(i);
-			// }
 			const ab = te.encode(input);
 			const c = String.fromCharCode(...new Uint8Array(ab));
 			results.push(c);
