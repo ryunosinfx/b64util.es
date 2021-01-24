@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Base64 util ES module</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Base64 util ES Module</h1>
+        <div class="encoder selected" id="encoder-body">
+            <h1>text input</h1>
+            <div>
+                <span>text input</span>
+                <textarea id="sourceInput"></textarea>
+                <select id="convertType">
+                    <option value="s2b64"> text -> base64</option>
+                    <option value="s2b64u"> text -> base64url</option>
+                    <option value="s2hex"> text -> hex</option>
+                    <option value="b64toHex"> base64 -> hex</option>
+                    <option value="toB64u"> base64 -> base64url</option>
+                    <option value="toB64"> base64url -> base64</option>
+                    <option value="hex2b64"> hex -> base64</option>
+                    <option value="b642s"> base64 -> utf8</option>
+                    <option value="b64u2s"> base64url -> utf8</option>
+                    <option value="hex2s"> hex -> utf8</option>
+                    <option value="b642bs"> base64 -> binarytext</option>
+                    <option value="b64u2bs"> base64url -> binarytext</option>
+                    <option value="hex2bs"> hex -> binarytext</option>
+                    <option value="isB64"> is base64?</option>
+                    <option value="sig"> signature</option>
+                </select>
+            </div>
+            <div>
+                <span>text result</span>
+                <textarea id="convertedResult"></textarea>
+            </div>
+            <div>
+                <h1>File Convert</h1>
+                <input id="fileUp" type="file" /><br>
+                fieName:<input id="fName" type="text"></input> <br>
+                contentType:<input id="contentType" type="text"></input> <br>
+                <textarea id="convertedFileResult"></textarea><br>
+                sig:<span id="sig"></span><br>
+                <button id="dlFile">download File</button>>
+                <a id="dlLinkAncker" class="none"></a>
+            </div>
+
+        </div>
+    </div>
+    <script type="module" src="./b64util.js"></script>
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>
