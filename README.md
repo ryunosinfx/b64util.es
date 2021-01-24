@@ -4,7 +4,11 @@ pure 0 dependent es module utility about binary,string,base64 and hex conbarting
 
 ## Overview
 
-binary util for browser. not for nodejs.
+Binary data container format convert util for browser. not for nodejs.
+
+### live demo
+
+https://ryunosinfx.github.io/b64util.es/index.html
 
 ## Requirement
 
